@@ -32,8 +32,8 @@ class USPSMLP(nn.Module):
 class USPSCNN(nn.Module):
     def __init__(self):
         super(USPSCNN, self).__init__()
-        self.conv1 = nn.Conv2d(1, 16, kernel_size=3, stride=1, padding=1)
-        self.conv2 = nn.Conv2d(16, 32, kernel_size=3, stride=1, padding=1)
+        self.conv1 = nn.Conv2d(1, 18, kernel_size=3, stride=1, padding=1)
+        self.conv2 = nn.Conv2d(18, 32, kernel_size=3, stride=1, padding=1)
         self.relu = nn.ReLU()
         self.maxpool = nn.MaxPool2d(kernel_size=2, stride=2)
         self.fc = nn.Linear(32 * 4 * 4, 10)
