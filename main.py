@@ -13,10 +13,10 @@ writer = SummaryWriter()
 class USPSMLP(nn.Module):
     def __init__(self):
         super(USPSMLP, self).__init__()
-        self.fc1 = nn.Linear(256, 512)
+        self.fc1 = nn.Linear(256, 528)
         self.relu = nn.ReLU()
-        self.fc2 = nn.Linear(512, 128)
-        self.fc3 = nn.Linear(128, 10)
+        self.fc2 = nn.Linear(528, 125)
+        self.fc3 = nn.Linear(125, 10)
 
 
     def forward(self, x):
