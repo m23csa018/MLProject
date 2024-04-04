@@ -119,8 +119,8 @@ cnn_model = USPSCNN()
 
 # Define loss and optimizer
 criterion = nn.CrossEntropyLoss()
-mlp_optimizer = optim.Adam(mlp_model.parameters(), lr=0.001)
-cnn_optimizer = optim.Adam(cnn_model.parameters(), lr=0.001)
+mlp_optimizer = optim.Adam(mlp_model.parameters(), lr=0.002)
+cnn_optimizer = optim.Adam(cnn_model.parameters(), lr=0.002)
 
 # Train MLP
 train_model(mlp_model, train_loader, criterion, mlp_optimizer, num_epochs=5)
